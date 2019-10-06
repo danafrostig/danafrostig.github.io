@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+    <!--site info-->
+    <head>
+
+        <meta name="author" content="Dana Frostig">
+
+        <title>BunBun Original Roll</title>
+        <link rel="stylesheet" href="./css/stylesheet.css">
+
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+
+    </head>
+
+    <!--header and navigation bar-->
+    <header>
+        <a href="index.html">
+            <!--<h1>Bun Bun Bake Shop</h1>-->
+            <!--logo-->
+            <div class = "logo">
+                <img src="./imgs/logo2.jpg" alt="Shop Logo" class = "logo1" width="237" height="148">
+            </div>
+        </a>
+            <!--navigation-->
+        <nav class="navbar">
+            <a href="about.html" ><button class="navbutton">about</button></a>
+            <a href="menu.html" ><button class="navbutton">rolls</button></a>
+            <a href="contact.html" ><button class="navbutton">contact</button></a>
+            <a href="index.html" ><button class="navbutton disabled">catering</button></a>
+            <a href="index.html"><button class="navbutton disabled">cart <img src="./imgs/cart.png" style="width:12px;height:12px;"></button></a>
+        </nav>
+    </header>
+
+    <!--page content-->
+    <body>
+        <!--breadcrumbs for how user got to current page-->
+        <div class = "breadcrumbs"><a href="index.html">home</a> >> <a href="menu.html">rolls</a> >> original </div>
+        <div class = "roll">
+        <!--orignal roll page title-->
+        <h2>Original Cinnamon Roll:</h2>
+        </div>
+
+        <div class = "container">
+            <div class = "details">
+                <!--information about the roll-->
+                <div class = "rollinfo">
+                    <!--roll image-->
+                    <img src="./imgs/reg_roll.png" alt="original roll" class = "focusImg" style="width:350px;height:295px;" >
+                    <!--roll ingredients-->
+                    <p class = "infoTitle">ingredients</p>
+                    <p class = "info">dough: flour, yeast, eggs, milk, sugar, butter, salt. filling: cinnamon, brown sugar, butter. (*contains: wheat, dairy, eggs)</p>
+                    <!--roll nutritional information-->
+                    <p class = "infoTitle">nutritional Info</p>
+                    <p class = "info">serving size: 1 roll (100g), calories: 436, total fat: 24g (saturated fat: 12g), cholesterol: 3mg, sodium: 305mg, potassium: 96mg, total carbohydrate: 50g, sugar: 35g, protein: 4.7g. vitamin A: 0%, vitamin c: 0%, calcium: 16%, iron: 8%, vitamin d: 0%, vitamin b-6: 0%, cobalamin 3%, magnesium: 3%</p><br>
+                    <!--recommended glaze(s) for the roll-->
+                    <p class = "infoTitle" style="text-align:center">recommended glaze(s)</p>
+                    <p class = "info" style="text-align:center">sugar-milk, vanilla-milk</p>
+
+                </div>
+
+                <!--add to cart dialogue box-->
+                <div class = "addtocart">
+                    <p class = "infoTitle" style="text-align:center">add to cart</p>
+                    <!--custom order form-->
+                    <p class = "info" style="text-align:center"><u>custom order:</u></p>
+                    <!--user selects number of rolls-->
+                    <p class = "info">1) number of rolls:</p>
+                        <label for = "numRolls" class="info"> select: </label>
+                        <select name ="numRolls">
+                            <option value="0"> --- </option>
+                            <option value="1">1</option>
+                            <option value="3">3</option>
+                            <option value="6">6</option>
+                            <option value="12">12</option>
+                        </select>
+                        <br><br>
+
+                    <!--user selects which glaze they prefer-->
+                    <p class = "info">2) pick a glaze:</p>
+                        <label for = "glaze" class="info"> select: </label>
+                        <select name ="glaze">
+                            <option value="0"> --- </option>
+                            <option value="None">none</option>
+                            <option value="sugar">sugar-milk</option>
+                            <option value="vanilla">vanilla-milk</option>
+                            <option value="chocolate">double-chocolate</option>
+                        </select>
+                        <br><br>
+
+                    <!--user selects how many orders of that roll flavor they want-->
+                    <p class = "info">3) number of boxes:</p>
+                        <label for = "boxes" class="info"> select: </label>
+                        <select name ="boxes">
+                            <option value="0"> --- </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    <br><br><br>
+
+                    <!--user inputs order form-->
+                    <button class="ctabutton2"><span>add to cart</span></button>   <!--<a href="index.html" ><button class="ctabutton2"><span>something else</span></button></a> -->
+                    <p class = "info" style="text-align:center">- or -</p>
+                    <!--quick add for the user to add a box of 12 rolls of the selected flavor to their cart-->
+                    <p class = "info" style="text-align:center"><u>quick add:</u></p><p class = "info">12 original rolls + sugar-milk glaze to your cart:</p>
+                    <button class="ctabutton2"><span>quick add</span></button>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--footer/site info and repeat of navigation-->
+        <footer>
+            <p class="foot">&#169; Bun Bun Bake Shop - 2019 <br>PUI Fall 2019 - dfrostig
+                <br><br>
+                <a href="about.html" >about</a> -
+                <a href="menu.html" >rolls</a> -
+                <a href="contact.html" >contact</a> -
+                <a href="index.html" >catering</a> -
+                <a href="index.html">cart</a>
+                <br><br>
+                questions? comments? <br> give us a call or send us a message by clicking <a href="contact.html">here</a>!
+            </p>
+
+        </footer>
+    </body>
+
+</html>

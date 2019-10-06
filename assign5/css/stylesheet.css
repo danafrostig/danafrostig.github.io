@@ -1,3 +1,4 @@
+/* header styling */
 header {
     text-align: center;
     padding: 10px;
@@ -6,12 +7,12 @@ header {
 }
 
 
-/*navbar styling*/
+/* navbar styling */
 nav {
     text-align: center;
     margin: 0 auto;
     width: 90%;
-    padding: 10px;
+    padding: 7px;
     display: flex;
     justify-content: space-around;
     font-family: 'Quicksand';
@@ -20,11 +21,13 @@ nav {
     background-color: #2F80ED;
 }
 
+/* logo size styling */
 .logo1 {
     width: 237px;
     height: 148px;
 }
 
+/* nav bar buttons styling */
 .navbutton {
     border-radius: 6px;
     background-color: #2945A8;
@@ -37,12 +40,13 @@ nav {
     cursor: pointer;
 }
 
+/* reduces opacity of non-functional buttons on the navbar */
 .disabled {
     opacity: 0.6;
     cursor: not-allowed;
 }
 
-
+/* call to action button styling */
 .ctabutton {
     display: inline-block;
     border-radius: 6px;
@@ -58,6 +62,7 @@ nav {
     cursor: pointer;
 }
 
+/* call to action button animation positioning */
 .ctabutton span {
     cursor: pointer;
     display: inline-block;
@@ -66,6 +71,7 @@ nav {
 
 }
 
+/* call to action button animation arrows */
 .ctabutton span:after {
     content: "\00bb";
     font-size: 18px;
@@ -76,15 +82,18 @@ nav {
     transition: 0.5s;
 }
 
+/* call to action button animation settings for mouse hover */
 .ctabutton:hover span {
     padding-right: 25px;
 }
 
+/* call to action button animation arrow settings for after mouse hover */
 .ctabutton:hover span:after {
     opacity: 1;
     right: 0;
 }
 
+/* call to action button animation settings for smaller call to action buttons (used on menu page) */
 .ctabutton2 {
     display: inline-block;
     border-radius: 6px;
@@ -127,11 +136,13 @@ nav {
     right: 0;
 }
 
+/* styling for homepage image*/
 .homeroll {
     width: 800px;
     float: left;
 }
 
+/* alignment for homepage text */
 .home {
     text-align: center;
     display: inline-block;
@@ -139,20 +150,12 @@ nav {
     /*border: 1px dashed black; */
 }
 
-.menu {
-    margin-left: 100px;
-    margin-top: 15px;
-    text-align: center;
-    display: inline-block;
-    padding: 10px 30px;
-    border: 1px dashed black;
-}
-
+/* setting page content background */
 body {
     background: #F2F6FA;
-
 }
 
+/* header 1 styling */
 h1 {
     margin: 0;
     font-family: "Lobster";
@@ -160,6 +163,7 @@ h1 {
     color:black;
 }
 
+/* header 2 styling */
 h2 {
     text-align: left;
     margin: 0;
@@ -168,6 +172,7 @@ h2 {
     color: #2945A8;
 }
 
+/* paragraph text styling */
 p {
     font-family: "Quicksand";
     font-size: 16px;
@@ -175,20 +180,57 @@ p {
     text-align: center;
 }
 
-.prodTitle {
-    font-family: "Quicksand";
-    font-size: 16px;
-    color: #2945A8;
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 3px;
+/* footer display styling */
+footer {
+    margin-top: 150px;
 }
 
+/* footer display styling for the homepage */
+#homefooter{
+    margin-top: 300px;
+}
+
+/* footer styling */
+.foot {
+    font-family: "Quicksand";
+    font-size: 12px;
+    color: black;
+    text-align: center;
+}
+
+/* breadcrumb styling and display location */
+.breadcrumbs {
+    margin-left: 100px;
+    font-family: "Quicksand";
+    font-size: 14px;
+    color: black;
+    text-align: left;
+    word-spacing: 12px;
+}
+
+/* sets breadcrumb links to not be the default blue/purple links */
+.breadcrumbs a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* styling for menu page title display location */
+.menu {
+    margin-left: 100px;
+    margin-top: 15px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 30px;
+    /*border: 1px dashed black;*/
+}
+
+/* grid container styling */
 .container {
   min-width: 500px;
   margin: auto;
 }
 
+/* main grid for menu page styling */
 main {
     display: grid;
     grid-template-columns: 400px 400px;
@@ -203,15 +245,145 @@ main {
     grid-auto-flow: column;
 }
 
+/* styling for menu page product boxes*/
 .product {
     width: 350px;
     border: 1px dashed black;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
 }
 
+/* text styling for product titles on menu page*/
+.prodTitle {
+    font-family: "Quicksand";
+    font-size: 16px;
+    color: #2945A8;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* image styling */
 img {
   width: 100%;
   height: auto;
 }
 
+/* grid specs for product details page */
+.details {
+    display: grid;
+    grid-template-areas: 'left right';
+    grid-template-columns: 700px 300px;
+    grid-auto-flow: row;
+    grid-gap: 75px;
+    margin-top: 44px;
+    justify-content: center;
+    align-content: center;
+}
+
+/* grid specs for about page */
+.about {
+    display: grid;
+    grid-template-areas: 'left right';
+    grid-template-columns: 250px 700px;
+    grid-auto-flow: row;
+    grid-gap: 75px;
+    margin-top: 44px;
+    justify-content: center;
+    align-content: center;
+}
+
+/* styling and display specs for roll information for product details page */
+.roll {
+    margin-left: 100px;
+    margin-top: 15px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 30px;
+    /*border: 1px dashed black;*/
+}
+
+/*
+.infoTitle {
+    font-family: "Lobster";
+    font-size: 20px;
+    color: #2945A8;
+    text-align: left;
+    text-decoration: underline;
+}*/
+
+/* text styling for titles on product details, about, and contact pages*/
+.infoTitle {
+    font-family: "Quicksand";
+    font-size: 18px;
+    color: #2945A8;
+    text-align: left;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* text stylying for information on product details, about, and contact pages */
+.info {
+    font-family: "Quicksand";
+    font-size: 14px;
+    color: black;
+    text-align: left;
+}
+
+/* display styling for images on product details pages */
+.focusImg {
+    float: left;
+    padding: 15px;
+}
+
+/* display styling for the image on the about page */
+.focusImg2 {
+    float: right;
+    padding: 15px 15px 0px 15px;
+}
+
+/* grid specs for roll information grid for product details pages */
+.rollinfo {
+    grid-area: left;
+    grid-row: auto / span 2;
+    /*border: 1px dashed black;*/
+}
+
+/*#lab {
+    font-family: "Quicksand";
+    font-size: 14px;
+    color: black;
+    text-align: left;
+}*/
+
+/* add to cart grid styling */
+.addtocart {
+    grid-area: right;
+    grid-row: auto / span 2;
+    padding: 0px 50px 15px 50px;
+    border: 1px dashed black;
+}
+
+/* shop about info grid styling */
+.aboutInfo {
+    grid-area: right;
+    grid-row: auto / span 2;
+    /*border: 1px dashed black;*/
+    padding: 0px 0px 0px 20px;
+}
+
+/* store info styling for about and contact pages*/
+.storeInfo {
+    grid-area: left;
+    grid-row: auto / span 2;
+    padding: 0px 50px 15px 50px;
+    border: 1px dashed black;
+}
+
+/* contact form grid styling */
+.contact {
+    grid-area: right;
+    grid-row: auto / span 2;
+    /*border: 1px dashed black;*/
+    padding: 0px 0px 0px 20px;
+}
 

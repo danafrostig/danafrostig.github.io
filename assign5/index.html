@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+    <!--site info-->
     <head>
 
         <meta name="author" content="Dana Frostig">
@@ -15,39 +16,60 @@
 
     </head>
 
-<!-- Heading + Navbar -->
-<header>
+    <!--header and navigation bar-->
+    <header>
 
-        <!--<h1>Bun Bun Bake Shop</h1>-->
-        <!--logo-->
-        <div class = "logo">
-            <a href="index.html">
-                <img src="./imgs/logo2.jpg" alt="Shop Logo" class="logo1"width="237" height="148">
-            </a>
+            <!--<h1>Bun Bun Bake Shop</h1>-->
+            <!--logo-->
+            <div class = "logo">
+                <a href="index.html">
+                    <img src="./imgs/logo2.jpg" alt="Shop Logo" class="logo1" width="237" height="148">
+                </a>
+            </div>
+            <!--navigation-->
+        <nav class="navbar">
+            <a href="about.html" ><button class="navbutton">about</button></a>
+            <a href="menu.html" ><button class="navbutton">rolls</button></a>
+            <a href="contact.html" ><button class="navbutton">contact</button></a>
+            <a href="index.html" ><button class="navbutton disabled">catering</button></a>
+            <a href="index.html"><button class="navbutton disabled">cart <img src="./imgs/cart.png" alt="cart icon" style="width:12px;height:12px;"></button></a>
+        </nav>
+    </header>
+
+    <!--homepage image and welcome message-->
+    <body>
+        <img src="./imgs/home_roll.jpg" alt="home roll" class = "homeroll">
+        <div class="home">
+            <h2>You can't resist these buns!</h2>
+            <p>... and we don't blame you!
+                <br>Our specialty rolls are irrisistable.</p>
+                <br><br>
+            <p>Can’t make it to our shop? <br> We ship fresh rolls anywhere in the Pittspurgh, PA area!</p>
+            <!--menu/rolls call to action-->
+            <a href="menu.html" ><button class="ctabutton"><span>order now!</span></button></a>
+
         </div>
-        <!--navigation-->
-    <nav class="navbar">
-        <a href="index.html" ><button class="navbutton">about</button></a>
-        <a href="menu.html" ><button class="navbutton">menu</button></a>
-        <a href="index.html" ><button class="navbutton disabled">checkout</button></a>
-        <a href="index.html" ><button class="navbutton disabled">catering</button></a>
-        <a href="index.html"><button class="navbutton disabled">contact</button></a>
-    </nav>
-</header>
 
-<!-- Center image -->
-<body>
-    <img src="./imgs/home_roll.jpg" alt="home roll" class = "homeroll">
-    <div class="home">
-        <h2>You can't resist these buns!</h2>
-        <p>... and we don't blame you!
-            <br>Our specialty rolls are irrisistable.</p>
-            <br><br>
-        <p>Can’t make it to our shop? <br> We ship fresh rolls anywhere in the Pittspurgh, PA area!</p>
+        <!--footer/site info and repeat of navigation-->
+        <footer id="homefooter">
 
-        <a href="index.html" ><button class="ctabutton"><span>order now!</span></button></a>
-
-    </div>
-</body>
-
+            <p class="foot">&#169; Bun Bun Bake Shop - 2019 <br>PUI Fall 2019 - dfrostig
+                <br><br>
+                <a href="about.html" >about</a> -
+                <a href="menu.html" >rolls</a> -
+                <a href="index.html" >contact</a> -
+                <a href="index.html" >catering</a> -
+                <a href="index.html">cart</a>
+                <br><br>
+                Questions? Comments? <br> Give us a call or send us a message by clicking <a href="contact.html">here</a>!
+            </p>
+            <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Valid CSS!" />
+                </a>
+            </p>
+        </footer>
+    </body>
 </html>

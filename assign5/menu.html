@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 
 <html>
+    <!--site info-->
     <head>
 
         <meta name="author" content="Dana Frostig">
 
-        <title>BunBun Bake Shop</title>
+        <title>BunBun Menu</title>
         <link rel="stylesheet" href="./css/stylesheet.css">
 
         <!-- fonts -->
@@ -15,76 +16,102 @@
 
     </head>
 
-<!-- Heading + Navbar -->
-<header>
-    <a href="index.html">
-        <!--<h1>Bun Bun Bake Shop</h1>-->
-        <!--logo-->
-        <div class = "logo">
-            <img src="./imgs/logo2.jpg" alt="Shop Logo" class = "logo1" width="237" height="148">
+    <!--header and navigation bar-->
+    <header>
+        <a href="index.html">
+            <!--<h1>Bun Bun Bake Shop</h1>-->
+            <!--logo-->
+            <div class = "logo">
+                <img src="./imgs/logo2.jpg" alt="Shop Logo" class = "logo1" width="237" height="148">
+            </div>
+        </a>
+            <!--navigation-->
+        <nav class="navbar">
+            <a href="about.html" ><button class="navbutton">about</button></a>
+            <a href="menu.html" ><button class="navbutton">rolls</button></a>
+            <a href="contact.html" ><button class="navbutton">contact</button></a>
+            <a href="index.html" ><button class="navbutton disabled">catering</button></a>
+            <a href="index.html"><button class="navbutton disabled">cart <img src="./imgs/cart.png" style="width:12px;height:12px;"></button></a>
+        </nav>
+    </header>
+
+    <!--menu page content-->
+    <body>
+        <!--breadcrumbs for how user got to current page-->
+        <div class = "breadcrumbs"><a href="index.html">home</a> >> rolls</div>
+
+        <div class = "menu">
+        <!--menu page title-->
+        <h2>Specialty Cinnamon Rolls:</h2>
         </div>
-    </a>
-        <!--navigation-->
-    <nav class="navbar">
-        <a href="index.html" ><button class="navbutton">about</button></a>
-        <a href="index.html" ><button class="navbutton">menu</button></a>
-        <a href="index.html" ><button class="navbutton disabled">checkout</button></a>
-        <a href="index.html" ><button class="navbutton disabled">catering</button></a>
-        <a href="index.html"><button class="navbutton disabled">contact</button></a>
-    </nav>
-</header>
 
-<!-- Center image -->
-<body>
-    <div class = "menu">
-    <h2>Specialty Cinnamon Rolls:</h2>
-    </div>
+        <div class = "container">
+            <main>
+                <!--original roll menu box-->
+                <div class = "product 1">
+                    <p class = "prodTitle">original</p>
+                    <a href="original.html">
+                    <img src="./imgs/reg_roll.png" alt="original roll"></a>
+                    <br><br>
+                    <a href="original.html"><button class="ctabutton2"><span>more details</span></button></a>   <button class="ctabutton2"><span>add to cart</span></button>
+                </div>
 
-    <div class = "container">
-        <main>
-            <div class = "product 1">
-                <p class = "prodTitle">original</p>
-                <img src="./imgs/reg_roll.png" alt="original roll">
+                <!--gluten free original roll menu box-->
+                <div class = "product 2">
+                    <p class = "prodTitle">original - gluten free</p>
+                    <img src="./imgs/gf_roll2.png" alt="gf roll">
+                    <br><br>
+                    <button class="ctabutton2"><span>more details</span></button>   <button class="ctabutton2"><span>add to cart</span></button>
+                </div>
+
+                <!--blackberry roll menu box-->
+                <div class = "product 3">
+                    <p class = "prodTitle">blackberry</p>
+                    <a href="blackberry.html">
+                    <img src="./imgs/blackberry_roll.png" alt="blackberry roll"></a>
+                    <br><br>
+                    <a href="blackberry.html" ><button class="ctabutton2"><span>more details</span></button></a>   <button class="ctabutton2"><span>add to cart</span></button>
+                </div>
+
+                <!--pumpkin spice roll menu box-->
+                <div class = "product 4">
+                    <p class = "prodTitle">pumpkin spice</p>
+                    <img src="./imgs/pumpspice_roll.png" alt="pumpkin spice roll">
+                    <br><br>
+                    <button class="ctabutton2"><span>more details</span></button></a>   <button class="ctabutton2"><span>add to cart</span></button>
+                </div>
+
+                <!--walnut roll menu box-->
+                <div class = "product 5">
+                    <p class = "prodTitle">walnut</p>
+                    <img src="./imgs/walnut_roll.png" alt="walnut roll">
+                    <br><br>
+                    <button class="ctabutton2"><span>more details</span></button></a>   <button class="ctabutton2"><span>add to cart</span></button>
+                </div>
+
+                <!--caramel pecan roll menu box-->
+                <div class = "product 6">
+                    <p class = "prodTitle">caramel pecan</p>
+                    <img src="./imgs/carpecan_roll.png" alt="caramel pecan roll">
+                    <br><br>
+                    <button class="ctabutton2"><span>more details</span></button></a>   <button class="ctabutton2"><span>add to cart</span></button>
+                </div>
+            </main>
+        </div>
+
+        <!--footer/site info and repeat of navigation-->
+        <footer>
+            <p class="foot">&#169; Bun Bun Bake Shop - 2019 <br>PUI Fall 2019 - dfrostig
                 <br><br>
-                <a href="index.html" ><button class="ctabutton2"><span>more details</span></button></a>   <a href="index.html" ><button class="ctabutton2"><span>add to cart</span></button></a>
-            </div>
-
-            <div class = "product 2">
-                <p class = "prodTitle">original - gluten free</p>
-                <img src="./imgs/gf_roll.png" alt="gf roll">
+                <a href="about.html" >about</a> -
+                <a href="menu.html" >rolls</a> -
+                <a href="contact.html" >contact</a> -
+                <a href="index.html" >catering</a> -
+                <a href="index.html">cart</a>
                 <br><br>
-                <a href="index.html" ><button class="ctabutton2"><span>more details</span></button></a>   <a href="index.html" ><button class="ctabutton2"><span>add to cart</span></button></a>
-            </div>
+                Questions? Comments? <br> Give us a call or send us a message by clicking <a href="contact.html">here</a>!
+            </p>
 
-            <div class = "product 3">
-                <p class = "prodTitle">blackberry</p>
-                <img src="./imgs/blackberry_roll.png" alt="blackberry roll">
-                <br><br>
-                <a href="index.html" ><button class="ctabutton2"><span>more details</span></button></a>   <a href="index.html" ><button class="ctabutton2"><span>add to cart</span></button></a>
-            </div>
-
-            <div class = "product 4">
-                <p class = "prodTitle">pumpkin spice</p>
-                <img src="./imgs/pumpspice_roll.png" alt="pumpkin spice roll">
-                <br><br>
-                <a href="index.html" ><button class="ctabutton2"><span>more details</span></button></a>   <a href="index.html" ><button class="ctabutton2"><span>add to cart</span></button></a>
-            </div>
-
-            <div class = "product 5">
-                <p class = "prodTitle">walnut</p>
-                <img src="./imgs/walnut_roll.png" alt="walnut roll">
-                <br><br>
-                <a href="index.html" ><button class="ctabutton2"><span>more details</span></button></a>   <a href="index.html" ><button class="ctabutton2"><span>add to cart</span></button></a>
-            </div>
-
-            <div class = "product 6">
-                <p class = "prodTitle">caramel pecan</p>
-                <img src="./imgs/carpecan_roll.png" alt="caramel pecan roll">
-                <br><br>
-                <a href="index.html" ><button class="ctabutton2"><span>more details</span></button></a>   <a href="index.html" ><button class="ctabutton2"><span>add to cart</span></button></a>
-            </div>
-        </main>
-    </div>
-</body>
-
+        </footer>
+    </body>
 </html>

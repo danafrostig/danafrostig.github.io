@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+    <!--site info-->
+    <head>
+
+        <meta name="author" content="Dana Frostig">
+
+        <title>BunBun Contact</title>
+        <link rel="stylesheet" href="./css/stylesheet.css">
+
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+
+    </head>
+
+    <!--header and navigation bar-->
+    <header>
+        <a href="index.html">
+            <!--<h1>Bun Bun Bake Shop</h1>-->
+            <!--logo-->
+            <div class = "logo">
+                <img src="./imgs/logo2.jpg" alt="Shop Logo" class = "logo1" width="237" height="148">
+            </div>
+        </a>
+            <!--navigation-->
+        <nav class="navbar">
+            <a href="about.html" ><button class="navbutton">about</button></a>
+            <a href="menu.html" ><button class="navbutton">rolls</button></a>
+            <a href="contact.html" ><button class="navbutton">contact</button></a>
+            <a href="index.html" ><button class="navbutton disabled">catering</button></a>
+            <a href="index.html"><button class="navbutton disabled">cart <img src="./imgs/cart.png" style="width:12px;height:12px;"></button></a>
+        </nav>
+    </header>
+
+    <!--contact page content-->
+    <body>
+        <!--breadcrumbs for how user got to current page-->
+        <div class = "breadcrumbs"><a href="index.html">home</a> >> contact</div>
+        <div class = "roll">
+        <!--contact page title-->
+        <h2>- Contact Us -</h2>
+        </div>
+
+        <div class = "container">
+            <div class = "about">
+                <!--store information (location, hours, phone number)-->
+                <div class = "storeInfo">
+                    <p class = "infoTitle" style="text-align:center">store info</p>
+                    <p class = "info"><u>store location:</u></p>
+                    <p class = "info">123 drury lane<br>pittsburgh, pa 15213 <br> -> <a href="maps.google.com">directions</a></p>
+
+                    <p class = "info"><u>store hours:</u></p>
+                    <p class = "info">m-f: 11am - 7pm<br>sat: 11am - 9pm<br>sun: 11am - 5pm</p>
+
+                    <p class = "info"><u>phone #:</u></p>
+                    <p class = "info">(555)555-555</p>
+                </div>
+
+                <!--form for sending a message to the shop (user can enter name, email, phone number, and type in the intended message)-->
+                <div class = "contact">
+                    <p class = "infoTitle" style="text-align: center">send us a message</p>
+                    <p class = "info">name:</p>
+                    <input type="text" name="name" id="name" style="width:350px; height:24px;">
+                    <p class = "info">email:</p>
+                    <input type="text" name="email" id="email" style="width:350px; height:24px;">
+                    <p class = "info">phone #:</p>
+                    <input type="text" name="phonen" id="phonen" placeholder="(xxx)xxx-xxxx" style="width:350px; height:24px;">
+                    <p class = "info">message:</p>
+                    <textarea id="message" name="message" style="width:650px; height:100px;"></textarea>
+                    <br><br>
+                    <button class="ctabutton2" style="display: block; margin: 0 auto;"><span>send message</span></button>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+        <!--footer/site info and repeat of navigation-->
+        <footer>
+            <p class="foot">&#169; Bun Bun Bake Shop - 2019 <br>PUI Fall 2019 - dfrostig
+                <br><br>
+                <a href="about.html" >about</a> -
+                <a href="menu.html" >rolls</a> -
+                <a href="contact.html" >contact</a> -
+                <a href="index.html" >catering</a> -
+                <a href="index.html">cart</a>
+                <br><br>
+                Questions? Comments? <br> Give us a call or send us a message by clicking <a href="contact.html">here</a>!
+            </p>
+
+        </footer>
+    </body>
+</html>
