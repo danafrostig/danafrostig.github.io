@@ -1,40 +1,44 @@
-//var originalNumRolls= document.getElementById("originalNumRolls").value;
-//var originalGlaze= document.getElementById("originalGlaze").value;
-//var originalBoxes= document.getElementById("originalBoxes").value;
+//javascript file for the Bun Bun Bake Shop website
 
-function updateOrderResult () {
-    var originalNumRolls= document.getElementById("originalNumRolls").value;
-    console.log(originalNumRolls)
-    document.getElementById("og_info").textContent = "num rolls" + originalNumRolls;
-};
-
-function myFunction() {
+//function for getting the value for number of rolls the user selects (also updates the price of the order)
+function numRollsValue() {
     var x = document.getElementById("originalNumRolls").value;
-    x += " roll(s)";
-    //var y = document.getElementById("originalGlaze").value;
-    //y += " glaze";
+    if (x == 1) {
+        x += " roll";
+    }
+    else {
+        x += " rolls"
+    }
     var price = 2 * document.getElementById("originalNumRolls").value * document.getElementById("originalBoxes").value;
-    document.getElementById("og_order").innerHTML = "You selected: " + x;
+    document.getElementById("numRollsDisplay").innerHTML = x;
     document.getElementById("price").innerHTML = "Price: $ " + price;
 };
 
-
-function myFunction2() {
+//function for getting the type of glaze the user selects
+function glazeValue() {
     var y = document.getElementById("originalGlaze").value;
     y += " glaze";
-    document.getElementById("og_order2").innerHTML =  y;
+    document.getElementById("glazeValueDisplay").innerHTML =  y;
 };
 
-function myFunction3() {
+//function for getting the value for number of boxes the user selects (also updates the price of the order)
+function boxesValue() {
     var z = document.getElementById("originalBoxes").value;
-    z += " boxes";
+    if (z == 1) {
+        z += " box";
+    }
+    else {
+        z += " boxes"
+    }
     var price = 2 * document.getElementById("originalNumRolls").value * document.getElementById("originalBoxes").value;
-    document.getElementById("og_order3").innerHTML =  z;
+    document.getElementById("numBoxesDisplay").innerHTML =  z;
     document.getElementById("price").innerHTML = "Price: $ " + price;
 };
 
+//function for updating the cart icon to contain the number of orders added to cart.
+//the function also checks to make sure the form is complete before incrementing the cart icon by 1
 var cartNum = 0;
-function myFunction4() {
+function cartAlertUpdate() {
     var a = document.getElementById("originalNumRolls").value;
     var b = document.getElementById("originalGlaze").value;
     var c = document.getElementById("originalBoxes").value;
@@ -43,21 +47,12 @@ function myFunction4() {
         document.getElementById("cartNumber").innerHTML = "(" + cartNum + ")";
     }
     else {
-        alert("Please complete the form.")
+        alert("Please complete the form.");
     }
-    //cartNum ++;
-    //document.getElementById("cartNumber").innerHTML = "(" + cartNum + ")";
 };
 
-function myFunction5() {
+//function for updating the cart icon to conatain the number of orders added to cart when using the quick add button
+function quickAddCartUpdate() {
     cartNum ++;
     document.getElementById("cartNumber").innerHTML = "(" + cartNum + ")";
 };
-
-
-// function myPrice() {
-//     var rollNum = document.getElementById("originalNumRolls").value;
-//     var boxNum = document.getElementById("originalBoxes").value;
-//     var price = 2 * rollNum * boxNum;
-//     document.getElementById("price").innerHTML =  "Price: $" + price;
-// };

@@ -406,6 +406,7 @@ img {
     border: 1px dashed black;
 }
 
+/*styling for cart images*/
 .cartimg {
     float: left;
     padding: 15px;
@@ -413,12 +414,14 @@ img {
     border-radius: 20px;
 }
 
+/*styling for cart item spacing*/
 #cartitem {
     padding: 10px 10px 50px 0px;
     position: relative;
     /*border: 1px solid blue;*/
 }
 
+/*styling for grid for add to cart add items dialogue box*/
 .addtocartCheckout {
     grid-area: right;
     grid-row: auto / span 2;
@@ -427,27 +430,31 @@ img {
     max-height: 475px;
 }
 
-#og_order {
+/*styling for selected number of rolls for add to cart dialogue box*/
+#numRollsDisplay {
     font-family: "Quicksand";
     font-size: 14px;
     color: #2945A8;
     text-align: center;
 }
 
-#og_order2 {
+/*styling for selected glaze for add to cart dialogue box*/
+#glazeValueDisplay {
     font-family: "Quicksand";
     font-size: 14px;
     color: #2945A8;
     text-align: center;
 }
 
-#og_order3 {
+/*styling for selected number of boxes for add to cart dialogue box*/
+#numBoxesDisplay {
     font-family: "Quicksand";
     font-size: 14px;
     color: #2945A8;
     text-align: center;
 }
 
+/*styling for the price for the add to cart dialogue box*/
 #price {
     font-family: "Quicksand";
     font-size: 14px;
@@ -455,6 +462,7 @@ img {
     text-align: center;
 }
 
+/*placing the cart number on the same line as the basket icon*/
 #cartNumber {
     display: inline-block;
 }
