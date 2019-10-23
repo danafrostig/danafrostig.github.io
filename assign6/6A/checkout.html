@@ -39,7 +39,7 @@
         </header>
 
         <!--breadcrumbs for how user got to current page-->
-        <div class = "breadcrumbs"><a href="index.html">home</a> >> <a href="menu.html">cart</a></div>
+        <div class = "breadcrumbs"><a href="index.html">home</a> >> <a href="checkout.html">cart</a></div>
         <div class = "roll">
         <!--orignal roll page title-->
         <h2>Cart:</h2>
@@ -49,6 +49,8 @@
             <div class = "checkout">
                 <!--information about the roll-->
                 <div class = "cartlist">
+                        <!--checkout button-->
+                        <div class="checkoutButton"><button class="ctabutton"><span>checkout</span></button></div>
                         <div id = "cartitem">
                             <!--roll image-->
                             <img src="./imgs/reg_roll.png" alt="original roll" class = "cartimg" >
@@ -58,6 +60,8 @@
                                 glaze: <b>vanilla-milk</b><br>
                                 boxes: <b>2</b> <br>
                                 price: <b>$48</b></p>
+                            <p class = "remove">(remove)</p>
+
                         </div>
 
                         <div id = "cartitem">
@@ -69,6 +73,7 @@
                                 glaze: <b>sugar-milk</b><br>
                                 boxes: <b>1</b> <br>
                                 price: <b>$18</b></p>
+                            <p class = "remove">(remove)</p>
                         </div>
 
                         <div id = "cartitem">
@@ -80,7 +85,10 @@
                                 glaze: <b>none</b><br>
                                 boxes: <b>1</b> <br>
                                 price: <b>$2</b></p>
+                            <p class = "remove">(remove)</p>
                         </div>
+                        <!--checkout button (at bottom of cart list so user doesn't have to scroll back up-->
+                        <div class="checkoutButton"><button class="ctabutton"><span>checkout</span></button></div>
                 </div>
 
                 <!--add to cart dialogue box-->
@@ -90,8 +98,8 @@
                     <p class = "info" style="text-align:center"><u>add another order:</u></p>
                     <!--user selects number of rolls-->
                     <p class = "info">1) roll flavor:</p>
-                        <label for = "numRolls" class="info"> select: </label>
-                        <select name ="numRolls">
+                        <label class="info"> select: </label>
+                        <select name ="flavor">
                             <option value="0"> --- </option>
                             <option value="1">original</option>
                             <option value="2">gluten free</option>
@@ -103,7 +111,7 @@
                         <br><br>
                     <!--user selects number of rolls-->
                     <p class = "info">2) number of rolls:</p>
-                        <label for = "numRolls" class="info"> select: </label>
+                        <label class="info"> select: </label>
                         <select name ="numRolls">
                             <option value="0"> --- </option>
                             <option value="1">1</option>
@@ -115,7 +123,7 @@
 
                     <!--user selects which glaze they prefer-->
                     <p class = "info">3) pick a glaze:</p>
-                        <label for = "glaze" class="info"> select: </label>
+                        <label class="info"> select: </label>
                         <select name ="glaze">
                             <option value="0"> --- </option>
                             <option value="None">none</option>
@@ -127,7 +135,7 @@
 
                     <!--user selects how many orders of that roll flavor they want-->
                     <p class = "info">4) number of boxes:</p>
-                        <label for = "boxes" class="info"> select: </label>
+                        <label class="info"> select: </label>
                         <select name ="boxes">
                             <option value="0"> --- </option>
                             <option value="1">1</option>

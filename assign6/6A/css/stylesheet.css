@@ -403,7 +403,13 @@ img {
 .cartlist {
     grid-area: left;
     grid-row: auto / span 2;
-    border: 1px dashed black;
+    /*border: 1px dashed black;*/
+}
+
+/*styling for checkout buttons*/
+.checkoutButton {
+    padding-left: 448px;
+
 }
 
 /*styling for cart images*/
@@ -416,9 +422,18 @@ img {
 
 /*styling for cart item spacing*/
 #cartitem {
-    padding: 10px 10px 50px 0px;
+    padding: 10px 10px 37px 0px;
     position: relative;
     /*border: 1px solid blue;*/
+}
+
+/*styling for remove cart item link*/
+.remove {
+    font-family: "Quicksand";
+    font-size: 11px;
+    color: #2945A8;
+    text-align: left;
+    margin: 0px 0px 0px 0px;
 }
 
 /*styling for grid for add to cart add items dialogue box*/
@@ -465,4 +480,5 @@ img {
 /*placing the cart number on the same line as the basket icon*/
 #cartNumber {
     display: inline-block;
+    margin: 0px 0px 0px 0px;
 }

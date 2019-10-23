@@ -13,6 +13,8 @@
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
+        <!-- link js file -->
+        <script src="main.js"></script>
 
     </head>
 
@@ -34,7 +36,7 @@
                 <form style="display: inline" action="menu.html" method="get"><button class="navbutton">rolls</button></form>
                 <form style="display: inline" action="contact.html" method="get"><button class="navbutton">contact</button></form>
                 <form style="display: inline" action="index.html" method="get"><button class="navbutton disabled">catering</button></form>
-                <form style="display: inline" action="index.html" method="get"><button class="navbutton disabled">cart <img src="./imgs/cart.png" alt="cart icon" style="width:12px;height:12px;"></button></form>
+                <form style="display: inline" action="checkout.html" method="get"><button class="navbutton">cart <img src="./imgs/cart.png" alt="cart icon" style="width:12px;height:12px;"><span id="cartNumber"></span></button></form>
             </nav>
         </header>
 
@@ -68,11 +70,13 @@
                     <p class = "infoTitle" style="text-align:center">add to cart</p>
                     <!--custom order form-->
                     <p class = "info" style="text-align:center"><u>custom order:</u></p>
+                    <!-- dynamic text that appears as user selects the add to cart options to show the user what they have selected-->
+                    <div id = "numRollsDisplay"></div><div id = "glazeValueDisplay"></div><div id = "numBoxesDisplay"></div><div id = "price">Price:</div>
                     <!--user selects number of rolls-->
                     <p class = "info">1) number of rolls:</p>
-                        <label for = "numRolls" class="info"> select: </label>
-                        <select name ="numRolls">
-                            <option value="0"> --- </option>
+                        <label class="info"> select: </label>
+                        <select name ="numRolls" id="originalNumRolls" onchange="numRollsValue()">
+                            <option value=""> --- </option>
                             <option value="1">1</option>
                             <option value="3">3</option>
                             <option value="6">6</option>
@@ -82,9 +86,9 @@
 
                     <!--user selects which glaze they prefer-->
                     <p class = "info">2) pick a glaze:</p>
-                        <label for = "glaze" class="info"> select: </label>
-                        <select name ="glaze">
-                            <option value="0"> --- </option>
+                        <label class="info"> select: </label>
+                        <select name ="glaze" id="originalGlaze" onchange="glazeValue()">
+                            <option value=""> --- </option>
                             <option value="None">none</option>
                             <option value="sugar">sugar-milk</option>
                             <option value="vanilla">vanilla-milk</option>
@@ -94,9 +98,9 @@
 
                     <!--user selects how many orders of that roll flavor they want-->
                     <p class = "info">3) number of boxes:</p>
-                        <label for = "boxes" class="info"> select: </label>
-                        <select name ="boxes">
-                            <option value="0"> --- </option>
+                        <label class="info"> select: </label>
+                        <select name ="boxes" id="originalBoxes" onchange="boxesValue()">
+                            <option value=""> --- </option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -106,11 +110,11 @@
                     <br><br><br>
 
                     <!--user inputs order form-->
-                    <button class="ctabutton2"><span>add to cart</span></button>   <!--<a href="index.html" ><button class="ctabutton2"><span>something else</span></button></a> -->
+                    <button class="ctabutton2" onclick="cartAlertUpdate()"><span>add to cart</span></button>   <!--<a href="index.html" ><button class="ctabutton2"><span>something else</span></button></a> -->
                     <p class = "info" style="text-align:center">- or -</p>
                     <!--quick add for the user to add a box of 12 rolls of the selected flavor to their cart-->
                     <p class = "info" style="text-align:center"><u>quick add:</u></p><p class = "info">12 blackberry rolls + double-chocolate glaze to your cart:</p>
-                    <button class="ctabutton2"><span>quick add</span></button>
+                    <button class="ctabutton2" onclick="quickAddCartUpdate()"><span>quick add</span></button>
 
 
                 </div>
