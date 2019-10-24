@@ -14,11 +14,28 @@ function numRollsValue() {
     document.getElementById("price").innerHTML = "Price: $ " + price;
 };
 
-//function for getting the type of glaze the user selects
+//function for getting the type of glaze the user selects and changing the filter on the image of the roll
 function glazeValue() {
     var y = document.getElementById("originalGlaze").value;
+    if (y == "no") {
+        document.getElementById("originalimg").style.filter = "grayscale(100%)";
+    }
+    else if (y == "sugar-milk") {
+        document.getElementById("originalimg").style.filter = "contrast(1.75)";
+    }
+    else if (y == "vanilla-milk") {
+        document.getElementById("originalimg").style.filter = "opacity(60%)";
+    }
+    else if (y == "double-chocolate") {
+        document.getElementById("originalimg").style.filter = "sepia(80%)";
+    }
+    else {
+        document.getElementById("originalimg").style.filter = "sepia(0)";
+    }
+
     y += " glaze";
     document.getElementById("glazeValueDisplay").innerHTML =  y;
+
 };
 
 //function for getting the value for number of boxes the user selects (also updates the price of the order)
@@ -56,3 +73,4 @@ function quickAddCartUpdate() {
     cartNum ++;
     document.getElementById("cartNumber").innerHTML = "(" + cartNum + ")";
 };
+

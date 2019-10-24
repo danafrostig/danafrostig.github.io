@@ -52,7 +52,7 @@
                 <!--information about the roll-->
                 <div class = "rollinfo">
                     <!--roll image-->
-                    <img src="./imgs/blackberry_roll.png" alt="original roll" class = "focusImg" style="width:350px;height:295px;" >
+                    <img src="./imgs/blackberry_roll.png" id="originalimg" alt="original roll" class = "focusImg" style="width:350px;height:295px;" >
                     <!--roll ingredients-->
                     <p class = "infoTitle">ingredients</p>
                     <p class = "info">dough: flour, yeast, eggs, milk, sugar, butter, salt. filling: blackberries, cinnamon, vanilla, lemon juice, brown sugar, butter. (*contains: wheat, dairy, eggs)</p>
@@ -89,10 +89,10 @@
                         <label class="info"> select: </label>
                         <select name ="glaze" id="originalGlaze" onchange="glazeValue()">
                             <option value=""> --- </option>
-                            <option value="None">none</option>
-                            <option value="sugar">sugar-milk</option>
-                            <option value="vanilla">vanilla-milk</option>
-                            <option value="chocolate">double-chocolate</option>
+                            <option value="no">none</option>
+                            <option value="sugar-milk">sugar-milk</option>
+                            <option value="vanilla-milk">vanilla-milk</option>
+                            <option value="double-chocolate">double-chocolate</option>
                         </select>
                         <br><br>
 
