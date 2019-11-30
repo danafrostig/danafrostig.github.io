@@ -11,7 +11,7 @@ function getChordValue() {
 var mySound;
 function preload() {
   soundFormats('mp3', 'ogg');
-  mySound = loadSound('guitar_chords_all.mp3');
+  mySound = loadSound('assets/guitar_chords_all.mp3');
   console.log(isLoaded());
 }
 
