@@ -8,7 +8,7 @@ function getChordValue() {
     return chordValue;
 };
 
-
+var mySound;
 function preload() {
   soundFormats('mp3', 'ogg');
   mySound = loadSound('guitar_chords_all.mp3');
