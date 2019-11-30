@@ -12,7 +12,7 @@ var mySound;
 function preload() {
   soundFormats('mp3', 'ogg');
   mySound = loadSound('assets/guitar_chords_all.mp3');
-  console.log(isLoaded());
+  // console.log(isLoaded());
 }
 
 function setup() {
