@@ -25,7 +25,7 @@ function displayChord() {
     var x = getChordValue();
     if (x == "cchord") {
         document.getElementById("frets").src = "./assets/imgs/cchord.png";
-        setup();
+        mySound.play();
     }
     else if (x =="achord"){
         document.getElementById("frets").src = "./assets/imgs/achord.png";
