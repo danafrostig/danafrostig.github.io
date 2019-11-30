@@ -16,7 +16,7 @@ function preload() {
 }
 
 function setup() {
-  preload()
+  preload();
 
   mySound.setVolume(0.1);
   mySound.play();
