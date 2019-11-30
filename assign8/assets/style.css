@@ -1,0 +1,570 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+
+.cover-container {
+  max-width: 100%;
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+  text-align: center;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+}
+
+
+.themed-grid-col {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /*background-color: rgba(86, 61, 124, .15);*/
+  border: 1px solid rgba(86, 61, 124, .2);
+}
+
+.welcome {
+  text-align: center;
+  padding-top: 150px;
+  font-family: Quicksand;
+}
+
+.chordsTitle {
+  text-align: center;
+  padding-top: 100px;
+  font-family: Quicksand;
+}
+
+.chordOptions {
+  text-align: center;
+  padding-top: 50px;
+  font-family: Quicksand;
+}
+
+
+.rounded label {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  padding: 20px;
+  background-color: #F9B6F6;
+  border: solid 2px #000000;
+  border-radius: 100%;
+  color: #000000;
+  text-shadow: none;
+  margin: 20px;
+  margin-bottom: 0px;
+/*  text-align: center;
+  line-height: 35px;*/
+  transition: all 0.3s;
+}
+
+.rounded input[type="radio"] {
+  display: none;
+}
+
+.rounded input[type="radio"]:checked + label {
+  border: solid 2px black;
+  background-color: #5CCFD7;
+}
+
+.guitarstrings {
+  text-align: center;
+  padding-top: 50px;
+}
+
+#frets {
+  display: block;
+  margin-top: 50px;
+  float:right;
+  /*margin: auto;*/
+}
+
+.icon:hover {
+    -webkit-animation: tada 500ms;
+    animation: tada 500ms;
+    /*animation-duration: 300ms;*/
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  font-family: Quicksand;
+  color: black;
+  text-shadow: none;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+
+  /* Full-width containers */
+  .timeline-container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline-container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+
+
+
+
+
+
+
+
+.shake-left:hover {
+  -webkit-animation: shake-left 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+          animation: shake-left 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-11-28 14:39:0
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation shake-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes shake-left {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 0 10%;
+            transform-origin: 0 10%;
+  }
+  10% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  80% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+}
+@keyframes shake-left {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 0 10%;
+            transform-origin: 0 10%;
+  }
+  10% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  80% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+}
+
+
+.wobble-ver-left:hover {
+  -webkit-animation: wobble-ver-left 0.8s both;
+          animation: wobble-ver-left 0.8s both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-11-28 14:55:20
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation wobble-ver-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes wobble-ver-left {
+  0%,
+  100% {
+    -webkit-transform: translateY(0) rotate(0);
+            transform: translateY(0) rotate(0);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateY(-30px) rotate(-6deg);
+            transform: translateY(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateY(15px) rotate(6deg);
+            transform: translateY(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateY(-15px) rotate(-3.6deg);
+            transform: translateY(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateY(9px) rotate(2.4deg);
+            transform: translateY(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateY(-6px) rotate(-1.2deg);
+            transform: translateY(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes wobble-ver-left {
+  0%,
+  100% {
+    -webkit-transform: translateY(0) rotate(0);
+            transform: translateY(0) rotate(0);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateY(-30px) rotate(-6deg);
+            transform: translateY(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateY(15px) rotate(6deg);
+            transform: translateY(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateY(-15px) rotate(-3.6deg);
+            transform: translateY(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateY(9px) rotate(2.4deg);
+            transform: translateY(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateY(-6px) rotate(-1.2deg);
+            transform: translateY(-6px) rotate(-1.2deg);
+  }
+}
+
+
+.shake-lr:hover {
+  -webkit-animation: shake-lr 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+          animation: shake-lr 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-11-28 14:57:5
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation shake-lr
+ * ----------------------------------------
+ */
+@-webkit-keyframes shake-lr {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  10% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  80% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+  }
+  90% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+}
+@keyframes shake-lr {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  10% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  80% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+  }
+  90% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+}
+
+
+

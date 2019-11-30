@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"> -->
+
+    <script src="assets/main.js"></script>
+
+    <!-- <script src="assets/p5/p5.js"></script> -->
+    <!-- <script src="assets/p5/p5.sound.js"></script> -->
+
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+    <title>Hello, world!</title>
+  </head>
+  <!-- <body onload="preload()"> -->
+  <body>
+    <!-- <h1>Hello, world!</h1> -->
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+
+
+        <div class="row flex-row-reverse">
+
+          <div class="col-md-8">
+                  <header class="masthead mb-auto">
+                    <div class="inner">
+                      <h3 class="masthead-brand">GuitarGuide</h3>
+                      <nav class="nav nav-masthead justify-content-center">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="history.html">History</a>
+                        <a class="nav-link active" href="learn.html">Learn To Play!</a>
+                      </nav>
+                    </div>
+                  </header>
+
+                  <div class = "chordsTitle">
+                    Pick a chord to learn how to play! <br> (volume up?)
+                  </div>
+                  <div class = "chordOptions">
+                    <p>Select Chord:</p>
+
+                    <form id="chosenChord" class="rounded" onchange="getChordValue()">
+                      <input type="radio" id="c" name="chord" value="cchord" onclick="displayChord()">
+                      <label for="c" class="icon">C</label>
+
+                      <input type="radio" id="a" name="chord" value="achord" onclick="displayChord()">
+                      <label for="a" class="icon">A</label>
+
+                      <input type="radio" id="g" name="chord" value="gchord" onclick="displayChord()">
+                      <label for="g" class="icon">G</label>
+
+                      <br><br>
+
+                      <input type="radio" id="e" name="chord" value="echord" onclick="displayChord()">
+                      <label for="e" class="icon">E</label>
+
+                      <input type="radio" id="d" name="chord" value="dchord" onclick="displayChord()">
+                      <label for="d" class="icon">D</label>
+
+                      <input type="radio" id="f" name="chord" value="fchord" onclick="displayChord()">
+                      <label for="f" class="icon">F</label>
+
+                      <br><br>
+
+                      <input type="radio" id="am" name="chord" value="amchord" onclick="displayChord()">
+                      <label for="am" class="icon">Am</label>
+
+                      <input type="radio" id="dm" name="chord" value="dmchord" onclick="displayChord()">
+                      <label for="dm" class="icon">Dm</label>
+
+                      <input type="radio" id="em" name="chord" value="emchord" onclick="displayChord()">
+                      <label for="em" class="icon">Em</label>
+
+                      <br><br>
+                      <input type="submit" value="reset">
+                    </form>
+                  </div>
+
+
+                  <!-- <canvas id="myCanvas"></canvas> -->
+          </div>
+          <div class="col-md-4"><img src="./assets/imgs/empty.png" alt = "empty fretboard" class="img-fluid" id="frets">
+
+          </div>
+
+      </div>
+
+
+
+    </div>
+
+
+
+<!--       <main role="main" class="inner cover">
+        <h1 class="cover-heading">Cover your page.</h1>
+        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+        <p class="lead">
+          <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+        </p>
+      </main> -->
+
+
+<!--       <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+        </div>
+      </footer>
+    </div> -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
