@@ -196,7 +196,7 @@ body {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: white;
+  background-color: #ECDDCB;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -217,9 +217,9 @@ body {
   position: absolute;
   width: 25px;
   height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #FF9F55;
+  right: -12px;
+  background-color: #5E5858;
+  border: 4px solid #ECDDCB;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -265,7 +265,7 @@ body {
 
 /* Fix the circle for containers on the right side */
 .right::after {
-  left: -16px;
+  left: -12px;
 }
 
 /* The actual content */
@@ -303,7 +303,7 @@ body {
 
   /* Make sure all circles are at the same spot */
   .left::after, .right::after {
-  left: 15px;
+  left: 18px;
   }
 
   /* Make all right containers behave like the left ones */
@@ -313,7 +313,13 @@ body {
 }
 
 
-
+/* Add arrows to the right container (pointing left) */
+.centerimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 
 
