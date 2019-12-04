@@ -38,25 +38,25 @@ function setup() {
     // mySound.setVolume(0.5);
     // mySound.play();
 
-    cSound.setVolume(0.5);
+    cSound.setVolume(0.8);
     // cSound.play();
 
-    aSound.setVolume(0.5);
+    aSound.setVolume(0.8);
     // aSound.play();
 
-    gSound.setVolume(0.5);
+    gSound.setVolume(0.8);
 
-    eSound.setVolume(0.5);
+    eSound.setVolume(0.8);
 
-    dSound.setVolume(0.5);
+    dSound.setVolume(0.8);
 
-    fSound.setVolume(0.5);
+    fSound.setVolume(0.8);
 
-    amSound.setVolume(0.5);
+    amSound.setVolume(0.8);
 
-    dmSound.setVolume(0.5);
+    dmSound.setVolume(0.8);
 
-    emSound.setVolume(0.5);
+    emSound.setVolume(0.8);
 }
 
 
