@@ -32,7 +32,7 @@ function preload() {
     dmSound = loadSound('assets/dmChordSound.mp3');
     emSound = loadSound('assets/emChordSound.mp3');
     // console.log(isLoaded());
-}
+};
 
 function setup() {
     // mySound.setVolume(0.5);
