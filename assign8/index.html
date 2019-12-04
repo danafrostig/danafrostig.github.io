@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js">
 
-     <!-- <script src="main.js"></script> -->
+    <script src="assets/main.js"></script>
+
+    <script src="assets/p5/p5.js"></script>
+    <script src="assets/p5/p5.sound.js"></script>
 
         <!-- fonts -->
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -21,7 +24,7 @@
 
     <title>GuitarGuide</title>
   </head>
-  <body>
+  <body onload="preload()">
     <!-- <h1>Hello, world!</h1> -->
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 <!--       <header class="masthead mb-auto">
@@ -54,12 +57,12 @@
                     Welcome to the Guitar Guide! <p> Learn about the history of the guitar <br> and learn how to play chords!</p>
                   </div>
                   <div class = "guitarstrings">
-                      <img src="./assets/imgs/lowE.png" class="shake-left" style="width: 70%"><br>
-                      <img src="./assets/imgs/A.png" class="shake-left" style="width: 70%"><br>
-                      <img src="./assets/imgs/D.png" class="shake-left" style="width: 70%"><br>
-                      <img src="./assets/imgs/G.png" class="shake-left" style="width: 70%"><br>
-                      <img src="./assets/imgs/B.png" class="shake-left" style="width: 70%"><br>
-                      <img src="./assets/imgs/highE.png" class="shake-left" style="width: 70%">
+                      <img onmouseover="playLowE(this)" src="./assets/imgs/lowE.png" class="shake-left" style="width: 70%"><br>
+                      <img onmouseover="playA(this)" src="./assets/imgs/A.png" class="shake-left" style="width: 70%"><br>
+                      <img onmouseover="playD(this)" src="./assets/imgs/D.png" class="shake-left" style="width: 70%"><br>
+                      <img onmouseover="playG(this)"  src="./assets/imgs/G.png" class="shake-left" style="width: 70%"><br>
+                      <img onmouseover="playB(this)"  src="./assets/imgs/B.png" class="shake-left" style="width: 70%"><br>
+                      <img onmouseover="playE(this)"  src="./assets/imgs/highE.png" class="shake-left" style="width: 70%">
                   </div>
                   <!-- <canvas id="myCanvas"></canvas> -->
           </div>
