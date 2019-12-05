@@ -22,15 +22,15 @@ var emSound;
 function preload() {
     soundFormats('mp3', 'ogg');
     // mySound = loadSound('assets/guitar_chords_all.mp3');
-    cSound = loadSound('assets/sounds/cChordSound.mp3');
-    aSound = loadSound('assets/sounds/aChordSound.mp3');
-    gSound = loadSound('assets/sounds/gChordSound.mp3');
-    eSound = loadSound('assets/sounds/eChordSound.mp3');
-    dSound = loadSound('assets/sounds/dChordSound.mp3');
-    fSound = loadSound('assets/sounds/fChordSound.mp3');
-    amSound = loadSound('assets/sounds/amChordSound.mp3');
-    dmSound = loadSound('assets/sounds/dmChordSound.mp3');
-    emSound = loadSound('assets/sounds/emChordSound.mp3');
+    cSound = loadSound('../assets/sounds/cChordSound.mp3');
+    aSound = loadSound('../assets/sounds/aChordSound.mp3');
+    gSound = loadSound('../assets/sounds/gChordSound.mp3');
+    eSound = loadSound('../assets/sounds/eChordSound.mp3');
+    dSound = loadSound('../assets/sounds/dChordSound.mp3');
+    fSound = loadSound('../assets/sounds/fChordSound.mp3');
+    amSound = loadSound('../assets/sounds/amChordSound.mp3');
+    dmSound = loadSound('../assets/sounds/dmChordSound.mp3');
+    emSound = loadSound('../assets/sounds/emChordSound.mp3');
     // console.log(isLoaded());
 };
 
@@ -63,39 +63,39 @@ function setup() {
 function displayChord() {
     var x = getChordValue();
     if (x == "cchord") {
-        document.getElementById("frets").src = "./assets/imgs/cchord.png";
+        document.getElementById("frets").src = "../assets/imgs/cchord.png";
         cSound.play();
     }
     else if (x =="achord"){
-        document.getElementById("frets").src = "./assets/imgs/achord.png";
+        document.getElementById("frets").src = "../assets/imgs/achord.png";
         aSound.play();
     }
     else if (x =="gchord"){
-        document.getElementById("frets").src = "./assets/imgs/gchord.png";
+        document.getElementById("frets").src = "../assets/imgs/gchord.png";
         gSound.play();
     }
     else if (x =="echord"){
-        document.getElementById("frets").src = "./assets/imgs/echord.png";
+        document.getElementById("frets").src = "../assets/imgs/echord.png";
         eSound.play();
     }
     else if (x =="dchord"){
-        document.getElementById("frets").src = "./assets/imgs/dchord.png";
+        document.getElementById("frets").src = "../assets/imgs/dchord.png";
         dSound.play();
     }
     else if (x =="fchord"){
-        document.getElementById("frets").src = "./assets/imgs/fchord.png";
+        document.getElementById("frets").src = "../assets/imgs/fchord.png";
         fSound.play();
     }
     else if (x =="amchord"){
-        document.getElementById("frets").src = "./assets/imgs/amchord.png";
+        document.getElementById("frets").src = "../assets/imgs/amchord.png";
         amSound.play();
     }
     else if (x =="dmchord"){
-        document.getElementById("frets").src = "./assets/imgs/dmchord.png";
+        document.getElementById("frets").src = "../assets/imgs/dmchord.png";
         dmSound.play();
     }
     else if (x =="emchord"){
-        document.getElementById("frets").src = "./assets/imgs/emchord.png";
+        document.getElementById("frets").src = "../assets/imgs/emchord.png";
         emSound.play();
     };
 
