@@ -326,8 +326,9 @@ body {
   width: 50%;
 }
 
-
-
+#historyHeader:hover {
+  background-color: #DFDFDF;
+}
 
 
 .shake-left:hover {
