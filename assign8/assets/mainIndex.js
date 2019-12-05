@@ -12,7 +12,7 @@ var eString;
 function preload() {
     soundFormats('mp3', 'ogg');
     // mySound = loadSound('assets/guitar_chords_all.mp3');
-    lowEString = loadSound('assets/sounds/lowEString.mp3');
+    lowEString = loadSound('../assets/sounds/lowEString.mp3');
     aString = loadSound('../assets/sounds/aString.mp3');
     dString = loadSound('../assets/sounds/dString.mp3');
     gString = loadSound('../assets/sounds/gString.mp3');
