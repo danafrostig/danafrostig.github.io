@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"> -->
 
-    <script src="assets/scripts/mainIndex.js"></script>
+    <script src="assets/main.js"></script>
 
     <script src="assets/p5/p5.js"></script>
     <script src="assets/p5/p5.sound.js"></script>
@@ -22,56 +22,89 @@
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
-    <title>GuitarGuide</title>
+    <title>GuitarGuide - Learn to Play!</title>
   </head>
   <body onload="preload()">
+  <!-- <body> -->
     <!-- <h1>Hello, world!</h1> -->
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
         <div class="inner">
           <h3 class="masthead-brand">GuitarGuide</h3>
           <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="index.html">Home</a>
-            <a class="nav-link" href="pages/history.html">History</a>
-            <a class="nav-link" href="pages/learn.html">Learn To Play!</a>
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="history.html">History</a>
+            <a class="nav-link active" href="learn.html">Learn To Play!</a>
           </nav>
         </div>
       </header>
 
 
 
-        <div class="row mb-3">
-          <div class="col-md-8 themed-grid-col">
+        <div class="row flex-row-reverse">
+
+          <div class="col-md-8">
 <!--                   <header class="masthead mb-auto">
                     <div class="inner">
                       <h3 class="masthead-brand">GuitarGuide</h3>
                       <nav class="nav nav-masthead justify-content-center">
-                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                         <a class="nav-link" href="history.html">History</a>
-                        <a class="nav-link" href="learn.html">Learn To Play!</a>
+                        <a class="nav-link active" href="learn.html">Learn To Play!</a>
                       </nav>
                     </div>
                   </header> -->
 
-                  <div class = "welcome">
-                    <h2>Welcome to the Guitar Guide!</h2> <p> Learn about the history of the guitar <br> and learn how to play chords!</p>
-                    <br>
-                    <h3>- sound on -</h3>Make sure your volume is up to fully enjoy GuitarGuide<br>
-                    <button class="btn btn-lg btn-secondary">enable sound</button>
+                  <div class = "chordsTitle">
+                    Pick a chord to learn how to play! <br> Note: There are many, many different chords you can learn to play on the guitar -- here are 9 super common chords you should learn first.
                   </div>
-                  <div class = "guitarstrings">
-                      <img onmouseover="playLowE(this)" src="./assets/imgs/lowE.png" class="shake-left" style="width: 70%"><br>
-                      <img onmouseover="playA(this)" src="./assets/imgs/A.png" class="shake-left" style="width: 70%"><br>
-                      <img onmouseover="playD(this)" src="./assets/imgs/D.png" class="shake-left" style="width: 70%"><br>
-                      <img onmouseover="playG(this)"  src="./assets/imgs/G.png" class="shake-left" style="width: 70%"><br>
-                      <img onmouseover="playB(this)"  src="./assets/imgs/B.png" class="shake-left" style="width: 70%"><br>
-                      <img onmouseover="playE(this)"  src="./assets/imgs/highE.png" class="shake-left" style="width: 70%">
+                  <div class = "chordOptions">
+                    <p>select a chord:</p>
+
+                    <form id="chosenChord" class="rounded" onchange="getChordValue()">
+                      <input type="radio" id="c" name="chord" value="cchord" onclick="displayChord()">
+                      <label for="c" class="icon">C</label>
+
+                      <input type="radio" id="a" name="chord" value="achord" onclick="displayChord()">
+                      <label for="a" class="icon">A</label>
+
+                      <input type="radio" id="g" name="chord" value="gchord" onclick="displayChord()">
+                      <label for="g" class="icon">G</label>
+
+                      <br><br>
+
+                      <input type="radio" id="e" name="chord" value="echord" onclick="displayChord()">
+                      <label for="e" class="icon">E</label>
+
+                      <input type="radio" id="d" name="chord" value="dchord" onclick="displayChord()">
+                      <label for="d" class="icon">D</label>
+
+                      <input type="radio" id="f" name="chord" value="fchord" onclick="displayChord()">
+                      <label for="f" class="icon">F</label>
+
+                      <br><br>
+
+                      <input type="radio" id="am" name="chord" value="amchord" onclick="displayChord()">
+                      <label for="am" class="icon">Am</label>
+
+                      <input type="radio" id="dm" name="chord" value="dmchord" onclick="displayChord()">
+                      <label for="dm" class="icon">Dm</label>
+
+                      <input type="radio" id="em" name="chord" value="emchord" onclick="displayChord()">
+                      <label for="em" class="icon">Em</label>
+
+                      <br><br>
+                      <input type="submit" value="reset">
+                    </form>
                   </div>
+
+
                   <!-- <canvas id="myCanvas"></canvas> -->
           </div>
-          <div class="col-md-4 themed-grid-col"><img src="./assets/imgs/guitvertstrings.png" class="img-fluid">
+          <div class="col-md-4"><img src="./assets/imgs/empty.png" alt = "empty fretboard" class="img-fluid" id="frets">
 
           </div>
+
       </div>
 
 
