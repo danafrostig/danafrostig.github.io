@@ -8,25 +8,34 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- style css -->
     <link rel="stylesheet" href="./assets/styles/style.css">
 
+    <!-- animation stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js">
 
+    <!-- javascript -->
     <script src="assets/scripts/mainIndex.js"></script>
 
+      <!-- p5 and p5 sound libraries -->
     <script src="assets/p5/p5.js"></script>
     <script src="assets/p5/p5.sound.js"></script>
 
-        <!-- fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <!-- load fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
+    <!-- page title and favicon -->
     <title>GuitarGuide</title>
+    <link rel="icon" href="assets/imgs/gg_icon.png" type="image/png" sizes="16x16">
   </head>
+  <!-- preload sounds on page load -->
   <body onload="preload()">
-    <!-- <h1>Hello, world!</h1> -->
+
+    <!-- page container -->
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <!-- navigation bar -->
       <header class="masthead mb-auto">
         <div class="inner">
           <h3 class="masthead-brand">GuitarGuide</h3>
@@ -39,26 +48,18 @@
       </header>
 
 
-
+        <!-- page content container (rows and columns) -->
         <div class="row mb-3">
           <div class="col-md-8 themed-grid-col">
-<!--                   <header class="masthead mb-auto">
-                    <div class="inner">
-                      <h3 class="masthead-brand">GuitarGuide</h3>
-                      <nav class="nav nav-masthead justify-content-center">
-                        <a class="nav-link active" href="index.html">Home</a>
-                        <a class="nav-link" href="history.html">History</a>
-                        <a class="nav-link" href="learn.html">Learn To Play!</a>
-                      </nav>
-                    </div>
-                  </header> -->
-
+                  <!-- homepage greeting content -->
                   <div class = "welcome">
                     <h2>Welcome to the Guitar Guide!</h2> <p> Learn about the history of the guitar <br> and learn how to play chords!</p>
                     <br>
+                    <!-- prompt user to enable sound -->
                     <h3>- sound on -</h3>Make sure your volume is up to fully enjoy GuitarGuide<br>
                     <button class="btn btn-lg btn-secondary" onclick="playE()">enable sound</button>
                   </div>
+                  <!-- strummable guitar strings (with sound) -->
                   <div class = "guitarstrings">
                       <img onmouseover="playLowE(this)" src="./assets/imgs/lowE.png" class="shake-left" style="width: 70%"><br>
                       <img onmouseover="playA(this)" src="./assets/imgs/A.png" class="shake-left" style="width: 70%"><br>
@@ -67,34 +68,17 @@
                       <img onmouseover="playB(this)"  src="./assets/imgs/B.png" class="shake-left" style="width: 70%"><br>
                       <img onmouseover="playE(this)"  src="./assets/imgs/highE.png" class="shake-left" style="width: 70%">
                   </div>
-                  <!-- <canvas id="myCanvas"></canvas> -->
           </div>
+          <!-- guitar vector -->
           <div class="col-md-4 themed-grid-col"><img src="./assets/imgs/guitvertstrings.png" class="img-fluid">
 
           </div>
       </div>
-
-
-
     </div>
 
 
 
-<!--       <main role="main" class="inner cover">
-        <h1 class="cover-heading">Cover your page.</h1>
-        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-        <p class="lead">
-          <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-        </p>
-      </main> -->
 
-
-<!--       <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-        </div>
-      </footer>
-    </div> -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

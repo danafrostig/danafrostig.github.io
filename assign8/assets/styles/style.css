@@ -27,12 +27,14 @@ a:hover {
  * Base structure
  */
 
+/* page background */
 html,
 body {
   height: 100%;
   background-color: #333;
 }
 
+/* body style */
 body {
   display: -ms-flexbox;
   display: flex;
@@ -41,7 +43,7 @@ body {
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
-
+/* page container width */
 .cover-container {
   max-width: 100%;
 }
@@ -54,10 +56,12 @@ body {
   margin-bottom: 2rem;
 }
 
+/* nav bar margin */
 .masthead-brand {
   margin-bottom: 0;
 }
 
+/* sets color of active link */
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: 700;
@@ -66,20 +70,24 @@ body {
   border-bottom: .25rem solid transparent;
 }
 
+/* sets color of hover link */
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
   border-bottom-color: rgba(255, 255, 255, .25);
 }
 
+/* nav bar left margin */
 .nav-masthead .nav-link + .nav-link {
   margin-left: 1rem;
 }
 
+/* set color of active link underline */
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
 }
 
+/* responsive style of nav bar */
 @media (min-width: 48em) {
   .masthead-brand {
     float: left;
@@ -110,7 +118,7 @@ body {
   color: rgba(255, 255, 255, .5);
 }
 
-
+/* padding for responsive contents */
 .themed-grid-col {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -118,12 +126,14 @@ body {
   /*border: 1px solid rgba(86, 61, 124, .2);*/
 }
 
+/* text style of welcome message */
 .welcome {
   text-align: center;
   padding-top: 100px;
   font-family: Quicksand;
 }
 
+/* text styles  */
 .chordsTitle {
   text-align: center;
   padding-top: 100px;
@@ -132,13 +142,14 @@ body {
   margin: 0 auto;
 }
 
+/* style for chord button text */
 .chordOptions {
   text-align: center;
   padding-top: 50px;
   font-family: Quicksand;
 }
 
-
+/* style for chord buttons */
 .rounded label {
   display: inline-block;
   width: 70px;
@@ -151,8 +162,6 @@ body {
   text-shadow: none;
   margin: 20px;
   margin-bottom: 0px;
-/*  text-align: center;
-  line-height: 35px;*/
   transition: all 0.3s;
 }
 
@@ -165,11 +174,13 @@ body {
   background-color: #5CCFD7;
 }
 
+/* styling for guitar strings on home page */
 .guitarstrings {
   text-align: center;
   padding-top: 50px;
 }
 
+/* styling for fretboard image */
 #frets {
   display: block;
   margin-top: 50px;
@@ -177,12 +188,14 @@ body {
   /*margin: auto;*/
 }
 
+/* animations for hover on chord buttons */
 .icon:hover {
     -webkit-animation: tada 500ms;
     animation: tada 500ms;
     /*animation-duration: 300ms;*/
 }
 
+/* border sizing style */
 * {
   box-sizing: border-box;
 }
@@ -329,7 +342,7 @@ body {
 
 
 
-
+/* shake-left animation css */
 .shake-left:hover {
   -webkit-animation: shake-left 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
           animation: shake-left 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;

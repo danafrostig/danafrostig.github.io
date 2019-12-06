@@ -1,6 +1,6 @@
 
 
-// var mySound;
+//initialize sound variables
 var lowEString;
 var aString;
 var dString;
@@ -8,10 +8,9 @@ var gString;
 var bString;
 var eString;
 
-
+//function for preloading sounds (mp3s) to reduce load time lag
 function preload() {
     soundFormats('mp3', 'ogg');
-    // mySound = loadSound('assets/guitar_chords_all.mp3');
     lowEString = loadSound('../assets/sounds/lowEString.mp3');
     aString = loadSound('../assets/sounds/aString.mp3');
     dString = loadSound('../assets/sounds/dString.mp3');
@@ -21,15 +20,12 @@ function preload() {
     // console.log(isLoaded());
 };
 
+//function for setting volume for sounds
 function setup() {
-    // mySound.setVolume(0.5);
-    // mySound.play();
 
     lowEString.setVolume(0.5);
-    // cSound.play();
 
     aString.setVolume(0.5);
-    // aSound.play();
 
     dString.setVolume(0.5);
 
@@ -40,7 +36,7 @@ function setup() {
     eString.setVolume(0.5);
 };
 
-
+//function for playing the sounds for each string when strummed
 function playLowE() {
         lowEString.play();
 };

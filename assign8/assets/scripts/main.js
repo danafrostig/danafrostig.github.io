@@ -8,7 +8,7 @@ function getChordValue() {
     return chordValue;
 };
 
-// var mySound;
+//initialize sound variables
 var cSound;
 var aSound;
 var gSound;
@@ -19,9 +19,9 @@ var amSound;
 var dmSound;
 var emSound;
 
+//function for preloading sounds (mp3s) to reduce load time lag
 function preload() {
     soundFormats('mp3', 'ogg');
-    // mySound = loadSound('assets/guitar_chords_all.mp3');
     cSound = loadSound('../assets/sounds/cChordSound.mp3');
     aSound = loadSound('../assets/sounds/aChordSound.mp3');
     gSound = loadSound('../assets/sounds/gChordSound.mp3');
@@ -34,15 +34,12 @@ function preload() {
     // console.log(isLoaded());
 };
 
+//function for setting volume for sounds
 function setup() {
-    // mySound.setVolume(0.5);
-    // mySound.play();
 
     cSound.setVolume(0.8);
-    // cSound.play();
 
     aSound.setVolume(0.8);
-    // aSound.play();
 
     gSound.setVolume(0.8);
 
@@ -59,7 +56,7 @@ function setup() {
     emSound.setVolume(0.8);
 }
 
-
+//function for displaying the tutorial image and playing the sound for the selected chord
 function displayChord() {
     var x = getChordValue();
     if (x == "cchord") {
@@ -98,8 +95,6 @@ function displayChord() {
         document.getElementById("frets").src = "../assets/imgs/emchord.png";
         emSound.play();
     };
-
-
 
 };
 
